@@ -1,0 +1,20 @@
+<div class="listings-box">
+  <%= link_to (image_tag listing.image(:medium)), listing %>
+
+  <p class="listing-title">
+    <%= listing.title %>
+  </p>
+
+  <p class="listing-postedby pull-left">
+    <strong>
+      <%= link_to listing.user.name, listing.user  %>
+    </strong>
+  </p>
+
+  <p class="listing-postedby pull-right price">
+    <strong>
+      <%= number_to_currency(listing.price, :unit => "$") %>
+    </strong>
+  </p>
+
+</div>

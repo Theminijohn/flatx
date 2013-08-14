@@ -1,0 +1,128 @@
+.UserProfileHeader {
+  display: table;
+  margin: 14px auto;
+}
+
+.UserProfileHeader:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.UserProfileHeader .header {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+  background: #fff;
+  color: #333;
+  float: left;
+  height: 153px;
+  position: relative;
+  width: 736px;
+}
+
+.UserProfileHeader .UserProfileImage {
+  float: left;
+  position: relative;
+  width: 153px;
+}
+
+.UserProfileHeader .UserProfileImage:after {
+  -webkit-box-shadow: -1px 0 rgba(0,0,0,0.1) inset;
+  -moz-box-shadow: -1px 0 rgba(0,0,0,0.1) inset;
+  box-shadow: -1px 0 rgba(0,0,0,0.1) inset;
+  content: " ";
+  height: 153px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 153px;
+}
+
+.UserProfileHeader .UserProfileImage .profileImage {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+  height: 153px;
+  width: 153px;
+}
+img {
+  max-width: 100%;
+  width: auto	9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.UserProfileHeader .UserInformation {
+  float: left;
+  padding-left: 14px;
+  width: 555px;
+}
+
+.UserProfileHeader .UserProfileHeaderName {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: #333;
+  color: rgba(21,21,21,0.8);
+  text-shadow: 1px 2px 4px #fff,0 0 0 #000,1px 2px 4px #fff,0 1px 0 #fff;
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-left: -2px;
+  margin-top: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+.UserProfileHeader .UserProfileHeaderBio {
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  clear: both;
+  color: #777;
+  font-size: 17px;
+  line-height: 22px;
+  margin: 0 0 14px;
+  max-height: 65px;
+  word-wrap: break-word;
+}
+
+p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.UserProfileSocial {
+  font-size: 18px;
+}
+
+.UserProfileCountry {
+  font-size: 12px;
+}
+

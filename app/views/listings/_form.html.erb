@@ -1,0 +1,43 @@
+<%= simple_form_for(@listing, html: { class: "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+
+    <!-- Image Uploading Field -->
+    <div class="control-group">
+      <label class="control-label">Upload an Image</label>
+      <div class="controls">
+        <%= f.input :image, label: false %>
+      </div>
+    </div>
+
+    <!-- Title Field -->
+    <div class="control-group">
+      <label class="control-label">Title</label>
+      <div class="controls">
+        <%= f.input :title, label: false %>
+      </div>
+    </div>
+
+    <!-- Description Field -->
+    <div class="control-group">
+      <label class="control-label">Description</label>
+      <div class="controls">
+        <%= f.input :description, label: false, as: :text, placeholder: "Add a Description...", input_html: {rows: "3"} %>
+      </div>
+    </div>
+
+    <!-- Price Field -->
+    <div class="control-group">
+      <label class="control-label">Price</label>
+      <div class="controls">
+        <%= f.input :price, :placeholder => "0.00", label: false %>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+  <h5>You're logged in</h5>
+<% else %>
+<div class="hero-unit">
+  <h1>Welcome to Vault</h1>
+  <p>Fell free to Sign up now</p>
+  <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-small btn-info" %>
+
+  <%= link_to user_omniauth_authorize_path(:facebook),
+              class: "btn btn-small btn-social-facebook" do %>
+      <i class="icon-facebook"></i> | Connect with Facebook
+  <% end %>
+
+</div>
+<% end %>
+
+

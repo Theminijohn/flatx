@@ -1,0 +1,60 @@
+<div class="UserProfileHeader">
+  <div class="header">
+    <div class="UserProfileImage">
+      <%= image_tag current_user.avatar(:profile), class: "profileImage" %>
+    </div>
+    <div class="UserInformation">
+      <h2 class="UserProfileHeaderName"><%= current_user.name %></h2>
+      <p class="UserProfileHeaderBio">
+        <% if @user.user_bio.present? %>
+            <%= @user.user_bio %>
+        <% else %>
+            <br>
+            :( This user has no Bio yet.
+            <br>
+            <br>
+        <% end %>
+      </p>
+
+      <!-- User Profile Social Links -->
+      <div class=" UserProfileSocial pull-right">
+        <% if @user.facebook_link.present? %>
+            <%= link_to @user.facebook_link, title: "#{@user.name} on Facebook", :target => '_blank' do %>
+                <span class="fui-facebook"></span>
+            <% end %> &middot;
+        <% end %>
+
+        <% if @user.twitter_link.present? %>
+            <%= link_to @user.twitter_link, title: "#{@user.name} on Twitter", :target => '_blank' do %>
+                <span class="fui-twitter"></span>
+            <% end %>  &middot;
+        <% end %>
+
+        <% if @user.pinterest_link.present? %>
+          <%= link_to @user.pinterest_link, title: "#{@user.name} on Pinterest", :target => '_blank' do %>
+                <span class="fui-pinterest"></span>
+          <% end %>
+        <% end %>
+      </div>
+
+      <!-- User Profile Country -->
+      <div class="UserProfileSocial pull-left">
+        <span class="fui-home"> <%= @user.country %></span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<hr>
+
+<div id="listings">
+  <%= render @listings %>
+</div>
+
+
+
+
+
+

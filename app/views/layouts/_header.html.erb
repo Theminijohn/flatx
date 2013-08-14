@@ -1,0 +1,49 @@
+<br>
+<div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse-03">
+      </button>
+      <%= link_to "Vault", root_path, class: "brand" %>
+      <div class="nav-collapse collapse" id="nav-collapse-03">
+        <ul class="nav">
+          <li>
+            <a href="/flatuipro_demo/index">
+              Menu Item
+            </a>
+          </li>
+        </ul> <!-- /nav -->
+
+        <form class="navbar-search form-search pull-left" action="" align="center">
+          <div class="input-append">
+            <input type="text" class="search-query span2" placeholder="Search">
+            <button type="submit" class="btn btn-large">
+              <i class="fui-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <ul class="nav pull-right">
+          <li class="divider"></li>
+
+          <% if user_signed_in? %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <%= current_user.name %> <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><li><%= link_to 'New Listing', new_listing_path %></li>
+              <li><%= link_to "My Profile", current_user %></li>
+              <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+              <li class="divider"></li>
+              <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+            </ul>
+          </li>
+          <% else %>
+            <li><%= link_to "Login", new_user_session_path %></li>
+          <% end %>
+        </ul> <!-- /nav -->
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div> <!-- /navbar-inverse -->

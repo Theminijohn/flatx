@@ -1,0 +1,36 @@
+/* Required for jQuery Isotope  */
+
+.listings-box {
+  width: 214px;
+  margin: 5px;
+  font-size: 11px;
+  line-height: 1.4em;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 1px #ccc;
+  overflow: hidden;
+}
+
+.listings-box img {
+  width: 100%;
+
+}
+
+.listing-title {
+  margin: 0px;
+  padding: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid lightgray;
+}
+
+.listing-postedby {
+  margin: 0px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.price {
+  color: #7f8c8d;
+}
