@@ -11,6 +11,15 @@
       </div>
     </div>
 
+    <!-- Category Selection Field -->
+    <div class="control-group">
+      <label class="control-label">Category</label>
+      <div class="controls">
+        <%= f.association :category,  as: :select, :prompt => 'Select one', label: false %>
+      </div>
+    </div>
+
+
     <!-- Title Field -->
     <div class="control-group">
       <label class="control-label">Title</label>

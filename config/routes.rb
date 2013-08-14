@@ -1,5 +1,7 @@
 Flat::Application.routes.draw do
 
+  resources :categories
+
   get "user/show"
   resources :listings
 

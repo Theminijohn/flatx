@@ -36,6 +36,10 @@
 
     <hr>
 
+    <%= @listing.category.name %>
+
+    <hr>
+
     <!-- Listing's Price -->
     <div class="pull-left well">
       <h5><%= number_to_currency(@listing.price, :unit => "$") %></h5>
@@ -55,6 +59,9 @@
           <% end %>
       <% end %>
     </div>
+
+
+
 
   </div><!-- End Right Side-->
 
