@@ -24,6 +24,6 @@ module Flat
 		config.assets.initialize_on_precompile = false
 
 		# Tag list delimiter for acts_as_taggable_on
-		#ActsAsTaggableOn.delimiter = ' ' # use space as delimiter
+		# ActsAsTaggableOn.delimiter = ',' # use space as delimiter
   end
 end
