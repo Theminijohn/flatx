@@ -26,7 +26,7 @@
     <file path="/listings_controller.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376600177124" ignored="false" />
     <file path="/listings.js.coffee" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376242725468" ignored="false" />
     <file path="/production.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376252293547" ignored="false" />
-    <file path="/user_controller.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376253446180" ignored="false" />
+    <file path="/user_controller.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376682500065" ignored="false" />
     <file path="/application_controller.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376483902333" ignored="false" />
     <file path="/user.css.scss" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376392119801" ignored="false" />
     <file path="/profile-page.css.scss" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376402372326" ignored="false" />
@@ -81,7 +81,7 @@
           <file leaf-file-name="user_controller.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="35" selection-start="213" selection-end="213" vertical-scroll-proportion="0.18327974">
+                <state line="5" column="16" selection-start="122" selection-end="122" vertical-scroll-proportion="0.10182208">
                   <folding />
                 </state>
               </provider>
@@ -738,7 +738,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="213" selection-end="213" vertical-scroll-proportion="0.18327974">
+        <state line="5" column="16" selection-start="122" selection-end="122" vertical-scroll-proportion="0.10182208">
           <folding />
         </state>
       </provider>
