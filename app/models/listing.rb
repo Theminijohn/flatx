@@ -23,9 +23,7 @@ class Listing < ActiveRecord::Base
 										:url => "/system/:attachment/:id/:style/:filename"
 
 	validates_attachment :image, presence: true,
-											 content_type: { content_type: ['image/jpeg', 'image/jpg', 'image/png'] },
-											 size: { less_than: 5.megabytes }
-
-
-
+											 content_type: {
+                        content_type: ['image/jpeg', 'image/jpg', 'image/png']
+                       }, size: { less_than: 5.megabytes }
 end
