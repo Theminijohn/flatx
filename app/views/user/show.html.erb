@@ -1,7 +1,7 @@
 <div class="UserProfileHeader">
   <div class="header">
     <div class="UserProfileImage">
-      <%= image_tag current_user.avatar(:profile), class: "profileImage" %>
+      <%= image_tag @user.avatar(:profile), class: "profileImage" %>
     </div>
     <div class="UserInformation">
       <h2 class="UserProfileHeaderName"><%= @user.name %></h2>
