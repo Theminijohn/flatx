@@ -27,7 +27,7 @@ class User < ActiveRecord::Base
 
 	has_attached_file :avatar, :styles => { :profile => "153x153#",
 																					:thumb => "100x100>",
-																					:avatar => "64x64>" },
+																					:avatar => "64x64#" },
 										:default_url => "http://placehold.it/300x300&text=missing"
 
 	validates :user_bio, length: { maximum: 180 }

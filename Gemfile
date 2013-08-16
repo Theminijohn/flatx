@@ -60,3 +60,6 @@ gem 'omniauth'
 
 gem 'omniauth-facebook'
 
+gem 'acts-as-taggable-on'
+
+

@@ -26,7 +26,7 @@
 
 
     <div class="media">
-        <%= link_to (image_tag current_user.avatar(:avatar)), current_user, class: "pull-left media-object" %>
+        <%= link_to (image_tag current_user.avatar(:avatar)), current_user, class: "pull-left listings-profile-image media-object" %>
 
       <div class="media-body">
         <h5 class="media-heading"><%= @listing.user.name %></h5>
@@ -40,8 +40,16 @@
 
     <hr>
 
+    Ships from  <i><%= @listing.user.country %></i>
+
+    <hr>
+
+    Materials: <i><%= raw @listing.tag_list %></i>
+
+    <hr>
+
     <!-- Listing's Price -->
-    <div class="pull-left well">
+    <div class="pull-left">
       <h5><%= number_to_currency(@listing.price, :unit => "$") %></h5>
     </div>
 

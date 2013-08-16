@@ -4,5 +4,5 @@
 
 
 jQuery ->
-  $('#listing').imagesLoaded ->
-    $('#listing').isotope itemSelector: ".listings-box"
+  $('#listings').imagesLoaded ->
+    $('#listings').isotope itemSelector: ".listings-box"

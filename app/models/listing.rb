@@ -1,8 +1,12 @@
 class Listing < ActiveRecord::Base
 
+	#Tags (Acts_as_taggable gem)
+	acts_as_taggable
+
 	# A Listing belogs to ONE User
 	belongs_to :user
 	belongs_to :category
+
 
 	# Validations
 	validates :description, :presence => true
