@@ -26,7 +26,7 @@
 
 
     <div class="media">
-        <%= link_to (image_tag current_user.avatar(:avatar)), current_user, class: "pull-left listings-profile-image media-object" %>
+        <%= link_to (image_tag @listing.user.avatar(:avatar)), @listing.user, class: "pull-left listings-profile-image media-object" %>
 
       <div class="media-body">
         <h5 class="media-heading"><%= @listing.user.name %></h5>

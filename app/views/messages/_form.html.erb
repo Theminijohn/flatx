@@ -1,0 +1,14 @@
+<%= simple_form_for(@message) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :receiver_id %>
+    <%= f.input :subject %>
+    <%= f.input :message_text, as: :text %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit, class: "btn btn-primary btn-small" %>
+  </div>
+
+<% end %>

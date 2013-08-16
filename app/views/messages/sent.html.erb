@@ -1,0 +1,4 @@
+<% @messages.each do |message| %>
+  <%= message.subject if message.subject.present? %>
+  <%= message.message_text %>
+<% end%>

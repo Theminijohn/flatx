@@ -1,0 +1,32 @@
+<div class="messages_header">
+  <h5>Conversations</h5>
+</div>
+
+<div class="span3">
+  <%= link_to "Compose Message", new_message_path, class: "btn btn-mini btn-primary" %>
+</div>
+
+
+<div class="span9">
+  <% @messages.each do |message| %>
+
+    <p class="testing">
+      <%= message.recipient.first_name%>
+    </p>
+
+    <p>
+      <strong>Subject:</strong>
+      <%= message.subject %>
+    </p>
+
+    <p>
+      <strong>Message Text</strong>
+      <%= message.message_text %>
+    </p>
+  <% end %>
+
+</div>
+
+
+
+

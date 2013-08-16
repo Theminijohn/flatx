@@ -21,6 +21,8 @@ class User < ActiveRecord::Base
 
   has_many :listings, dependent: :destroy
 
+	has_many :messages
+
   has_attached_file :avatar, default_url: "http://placehold.it/300x300&text=missing",
     styles: { profile: "153x153#",
       thumb:   "100x100>",

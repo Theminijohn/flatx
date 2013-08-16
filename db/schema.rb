@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130815204815) do
+ActiveRecord::Schema.define(version: 20130816195827) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -35,6 +35,17 @@ ActiveRecord::Schema.define(version: 20130815204815) do
   end
 
   add_index "listings", ["user_id"], name: "index_listings_on_user_id"
+
+  create_table "messages", force: true do |t|
+    t.integer  "recipient_id"
+    t.integer  "receiver_id"
+    t.text     "message_text"
+    t.string   "subject"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "messages", ["receiver_id"], name: "index_messages_on_receiver_id"
 
   create_table "taggings", force: true do |t|
     t.integer  "tag_id"

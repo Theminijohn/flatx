@@ -11,4 +11,11 @@ Flat::Application.routes.draw do
   get "flatuipro_demo/index"
 	root :to => "listings#index"
 
+	resources :messages, only: [:index, :create, :new] do
+		member do
+			get :inbox
+			get :sent
+		end
+	end
+
 end
