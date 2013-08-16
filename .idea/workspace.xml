@@ -19,7 +19,7 @@
     <file path="/edit.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376484163713" ignored="false" />
     <file path="/user.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376486577274" ignored="false" />
     <file path="/_form.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376677534284" ignored="false" />
-    <file path="/show.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376602199594" ignored="false" />
+    <file path="/show.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376682768010" ignored="false" />
     <file path="/index.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376502580437" ignored="false" />
     <file path="/listing.rb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376599769140" ignored="false" />
     <file path="/_listing.html.erb" changelist="6e2f6aaa-a1b3-4efc-a57c-3c74a35d5425" time="1376486966290" ignored="false" />
@@ -78,10 +78,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="user_controller.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="user_controller.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="16" selection-start="122" selection-end="122" vertical-scroll-proportion="0.10182208">
+                <state line="9" column="53" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/user/show.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="49" selection-start="260" selection-end="260" vertical-scroll-proportion="0.13088404">
                   <folding />
                 </state>
               </provider>
@@ -130,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20130811152233_create_listings.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/category.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/listings.js.coffee" />
@@ -146,6 +154,7 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/views/listings/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/user_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/user/show.html.erb" />
       </list>
     </option>
   </component>
@@ -211,6 +220,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -651,11 +682,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/user/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="21" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.97549593" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="13" selection-start="283" selection-end="283" vertical-scroll-proportion="-12.892858" />
@@ -738,7 +764,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="122" selection-end="122" vertical-scroll-proportion="0.10182208">
+        <state line="9" column="53" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="49" selection-start="260" selection-end="260" vertical-scroll-proportion="0.13088404">
           <folding />
         </state>
       </provider>

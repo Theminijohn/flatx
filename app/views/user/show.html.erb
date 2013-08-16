@@ -4,7 +4,7 @@
       <%= image_tag current_user.avatar(:profile), class: "profileImage" %>
     </div>
     <div class="UserInformation">
-      <h2 class="UserProfileHeaderName"><%= current_user.name %></h2>
+      <h2 class="UserProfileHeaderName"><%= @user.name %></h2>
       <p class="UserProfileHeaderBio">
         <% if @user.user_bio.present? %>
             <%= @user.user_bio %>
