@@ -8,7 +8,9 @@ class User < ActiveRecord::Base
     if user.present?
       user
     else
-      user = User.create(name:auth.extra.raw_info.name,
+      user = User.create(first_name:auth.extra.raw_info.first_name,
+												 last_name:auth.extra.raw_info.last_name,
+												 facebook_link:auth.extra.raw_info.link,
                          provider:auth.provider,
                          uid:auth.uid,
                          email:auth.info.email,

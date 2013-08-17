@@ -223,7 +223,10 @@ Devise.setup do |config|
 
 	require "omniauth-facebook"
 	config.omniauth :facebook, "641398059206436", "dd9ef0da7f7c78365578d85cec54bafd",
-									{:scope => 'email, offline_access', :client_options => {:ssl => {:ca_file => 'lib/assets/cacert.pem'}}}
+									{:scope => 'email,offline_access',
+									 :client_options => {:ssl => {:ca_file => 'lib/assets/cacert.pem'}},
+									 :strategy_class => OmniAuth::Strategies::Facebook}
+
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
