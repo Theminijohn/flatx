@@ -29,4 +29,10 @@ class User < ActiveRecord::Base
       avatar:   "64x64#" }
 
   validates :user_bio, length: { maximum: 180 }
+
+	# for name instead of id in the link
+	def to_param
+		name
+	end
+
 end
