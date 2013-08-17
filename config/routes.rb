@@ -8,7 +8,7 @@ Flat::Application.routes.draw do
 
 	get "flatuipro_demo/index"
 
-	devise_for :users, :controllers => { :registration => "registration",
+	devise_for :users, :controllers => { :registrations => "registrations",
 																			 :omniauth_callbacks => "users/omniauth_callbacks" },
 						 :path => '', :path_names => {:sign_in => 'login'}
 	get 'users/:id' => 'user#show', as: :user
