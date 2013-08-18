@@ -37,6 +37,7 @@
             <ul class="dropdown-menu">
               <li><li><%= link_to 'New Listing', new_listing_path %></li>
               <li><%= link_to "My Profile", current_user %></li>
+              <li><%= link_to "My Shop", :controller => "shop", :action => "show" %></li>
               <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
               <li class="divider"></li>
               <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
