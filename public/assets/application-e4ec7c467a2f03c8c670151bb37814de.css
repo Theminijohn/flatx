@@ -8365,6 +8365,10 @@ input.search-query {
     margin-right: -20px;
   }
 }
+.messages_header {
+  padding-bottom: 12px;
+  border-bottom: solid 1px #d9d9d9;
+  padding-top: 18px; }
 .UserProfileHeader {
   display: table;
   margin: 14px auto; }
@@ -8417,7 +8421,7 @@ input.search-query {
 
 img {
   max-width: 100%;
-  width: auto	9;
+  width: auto 9;
   height: auto;
   vertical-align: middle;
   border: 0;
@@ -8478,28 +8482,80 @@ p {
 
 .UserProfileCountry {
   font-size: 12px; }
+
+.profile_page_cover {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+.profile_page_cover img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  width: 870px;
+  height: 150px;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -ms-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0; }
+
+.shop_info {
+  padding: 10px;
+  font-size: 16px; }
+
+.shop_info small {
+  position: relative;
+  font-size: 12px;
+  font-weight: normal;
+  word-wrap: break-word;
+  color: #888; }
+
+.shop_owner {
+  background-color: #f5f5f1;
+  border-radius: 4px;
+  padding: 15px; }
+
+.shop_page_avatar {
+  width: 64px;
+  height: 64px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
 /* Required for jQuery Isotope  */
 .listings-box {
-  margin: 5px;
-  padding: 5px;
+  width: 200px;
+  margin: 8px;
   font-size: 11px;
   line-height: 1.4em;
   float: left;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #444;
-  width: 214px; }
+  box-shadow: 0px 0px 6px 1px #ccc;
+  overflow: hidden; }
 
 .listings-box img {
-  width: 100%;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px; }
+  width: 100%; }
 
 .listing-title {
-  margin: 10px 0 5px;
-  font-size: 13px; }
+  margin: 0px;
+  padding: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid lightgray; }
 
 .listing-postedby {
-  font-size: 12px; }
+  margin: 0px;
+  padding: 10px;
+  font-size: 11px; }
+
+.price {
+  color: #7f8c8d; }
+
+.listings-profile-image {
+  height: 64px;
+  width: 64px; }
