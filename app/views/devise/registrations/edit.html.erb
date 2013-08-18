@@ -7,12 +7,12 @@
     <div class="control-group">
       <label class="control-label">Upload an Avatar</label>
       <div class="controls">
-        <%= f.input :avatar, label: false %>
+        <%= f.input :avatar, label: false, class: "flat" %>
       </div>
     </div>
 
     <!-- Username Input-->
-    <div class="control-group">
+    <div class="control-group small">
       <label class="control-label">Username</label>
       <div class="controls">
         <%= f.input :name, :autofocus => true, label: false %>
@@ -20,7 +20,7 @@
     </div>
 
     <!-- First Name Input-->
-    <div class="control-group">
+    <div class="control-group small">
       <label class="control-label">First Name</label>
       <div class="controls">
         <%= f.input :first_name, :autofocus => true, label: false %>
@@ -28,7 +28,7 @@
     </div>
 
     <!-- Last Name Input-->
-    <div class="control-group">
+    <div class="control-group small">
       <label class="control-label">Last Name</label>
       <div class="controls">
         <%= f.input :last_name, :autofocus => true, label: false %>
@@ -36,7 +36,7 @@
     </div>
 
     <!-- Facebook Link Input-->
-    <div class="control-group">
+    <div class="control-group small">
       <label class="control-label">Facebook Link</label>
       <div class="controls">
         <%= f.input :facebook_link, :autofocus => true, label: false %>
@@ -44,7 +44,7 @@
     </div>
 
     <!-- Twitter Link Input-->
-    <div class="control-group">
+    <div class="control-group small">
       <label class="control-label">Twitter Link</label>
       <div class="controls">
         <%= f.input :twitter_link, :autofocus => true, label: false %>
@@ -52,7 +52,7 @@
     </div>
 
     <!-- Pinterest Link Input-->
-    <div class="control-group">
+    <div class="control-group small">
       <label class="control-label">Pinterest Link</label>
       <div class="controls">
         <%= f.input :pinterest_link, :autofocus => true, label: false %>
@@ -66,6 +66,8 @@
         <%= f.select :gender, [["Not Telling", 1], ["Male", 2], ["Female", 3]], label: false %>
       </div>
     </div>
+
+
 
     <!-- User Bio Field -->
     <div class="control-group">
@@ -84,7 +86,7 @@
     </div>
 
     <!-- Email Input-->
-    <div class="control-group">
+    <div class="control-group small">
       <label class="control-label">Email</label>
       <div class="controls">
         <%= f.input :email, :autofocus => true, label: false %>
@@ -92,7 +94,7 @@
     </div>
 
     <!-- New Password Input-->
-    <div class="control-group">
+    <div class="control-group small">
       <label class="control-label">New Password</label>
       <div class="controls">
         <%= f.input :password, :autofocus => true, label: false %>
@@ -100,7 +102,7 @@
     </div>
 
     <!-- New Password Confirmation Input-->
-    <div class="control-group">
+    <div class="control-group small">
       <label class="control-label">New Password Confirmation</label>
       <div class="controls">
         <%= f.input :password_confirmation, :autofocus => true, label: false %>

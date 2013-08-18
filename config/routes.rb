@@ -10,7 +10,7 @@ Flat::Application.routes.draw do
 
 	devise_for :users, :controllers => { :registrations => "registrations",
 																			 :omniauth_callbacks => "users/omniauth_callbacks" },
-						 :path => '', :path_names => {:sign_in => 'login'}
+						 :path => '', :path_names => {:sign_in => 'signin'} # Redirect from users/sign_in to /signin
 	get 'users/:id' => 'user#show', as: :user
 
 	resources :messages, only: [:index, :create, :new] do
